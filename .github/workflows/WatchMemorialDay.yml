@@ -25,4 +25,4 @@ jobs:
           python MemorialDay/main.py $ACTION $DATA
         env:
           ACTION: ${{ github.event.action }}
-          DATA: ${{ github.event.issue.comment.body }}
+          DATA: ${{ github.event.comment.body }}
